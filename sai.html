@@ -2,17 +2,59 @@
  <head> <title>My Blog</title> 
 </head> <style> body, h1, h2, p, ul { margin: 0; padding: 0; }
  img { width: 200px; height: 300px; } 
-body { font-family: Arial, sans-serif; line-height: 1.6; background-color:#ffffcc}
+body { font-family: Arial, sans-serif; line-height: 1.6; }
  header { background-color: #333; color: #fff; padding: 20px; text-align: center; } 
 header h1 { margin: 0; } nav ul { list-style-type: none; } 
 nav ul li { display: inline; margin-right: 20px; }
+.background{
+padding-top:25px;
+padding-bottom:25px;
+padding-left:20px;
+padding-right:850px;
+backgrount-image:url("vaxy.jpg");
+background_size:1050px;
+width=300px;
+height:300px;
+border:solid 2px white;
+border-radius:50px;
+margin:1epx;
+}
  nav ul li a { color: #fff; text-decoration: none; }
  main { padding: 20px; } article { margin-bottom: 30px; }
  article h2 { color: #6d1a1a; } 
+</div>
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
 footer { background-color: #333; color: #fff; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; } 
-</style> <body> <header> <h1>MY BLOG</h1> <img src="vaxy.jpeg"> 
-<nav> <ul> <li><a href="#">Home</a></li> <li><a href="#">About</a></li>
- <li><a href="#">Contact</a></li> </ul> </nav>
+</style> <body> <div class="background"><header> <h1>MY BLOG</h1> <img src="vaxy.jpeg"> 
  </header>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,50 +64,71 @@ footer { background-color: #333; color: #fff; text-align: center; padding: 10px;
   <title>Saikrishna's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <h1>Saikrishna</h1>
     <p>Software Engineer / Web Developer</p>
   </header>
 
-
+</div>
+<br><br><br><br><br><br><br><br>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <div class="navbar">
-  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-search"></i> Skills</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-</div>
+  <a class="active" href="#hh0"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#hh1"><i class="fa fa-fw fa-search"></i> ABOUT ME</a>
+  <a href="#hh2"><i class="fa fa-fw fa-envelope"></i> EDUCATION</a>
+  <a href="#hh3"><i class="fa fa-fw fa-user"></i> PROJECTS</a>
 
-  <main>
-    <h2>About Me</h2>
-    <p> Sai krishna is pursuing his Graduation in CSE(AIML) from Malla Reddy college of engneering and technology(MRCET).</p>
+ <div> <main>
+    <h2> <a name="hh0">About Me</a></h2>
+    <p> Sai krishna is pursuing his Graduation in CSE(AIML) from Malla Reddy college of engneering and technology(MRCET).</p></div>
 
-    <h2>Skills</h2>
+    <div><h2><a name="hh1">Skills</a></h2>
     <ul>
      <li> HTML & CSS</li>
       <li>JavaScript</li>
       <li>Python</li>
       <li>Problem-solving</li>
       <li>Teamwork</li>
-    </ul>
- <h2>EDUCATION</h2>
-<p><li>10TH (SSC BOARD) :Little scholars high school (2018-2019) GPA:8.8<br></li>
- <li>INTERMEDIATE (IBE BOARD):Narayana junior  college  (2019-2021) MARKS:94% <br>
-<li> B.TECH (JNTUH HYDERABAD): Mallareddy college of engneering and technology(2022-2025) CGPA:8.8</p>
+    </ul></div>
+ <div><h2><a name="hh2">Education</a></h2>
+<table>
+  <tr>
+    <th>Class</th>
+    <th>institution name</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td>10TH (SSC BOARD) </td>
+    <td>Little scholars high school</td>
+    <td>8.8</td>
+  </tr>
+  <tr>
+    <td>INTERMEDIATE (IBE BOARD)</td>
+    <td>Narayana junior  college  </td>
+    <td>94% </td>
+  </tr>
+ <tr>
+    <td>B.TECH (JNTUH HYDERABAD)</td>
+    <td> Mallareddy college of engneering and technology</td>
+    <td>7</td>
+  </tr>
+</table>
+</div>
+   <div> <h2><a name="hh3">Projects</a></h2>
+   <li> Link to AD Project 1: Heart Diseases prediction using Machine learning</li>
+    <li>Link to AD Project 2: MUET</li></div>
 
-    <h2>Projects</h2>
-    <p>Link to AD Project 1: Heart Diseases prediction using Machine learning</p>
-    <p>Link to AD Project 2: MUET</p>
-
-    <h2>Contact</h2>
-    <p>Email: tippanisaikrishna53@example.com</p>
-    <p>Phone: +91 9110314479</p>
-    <p>linkedin: saikrishna53
-  </main>
+   <div> <h2>Contact</h2>
+    <li>Email: tippanisaikrishna53@example.com</li>
+    <li>Phone: +91 9110314479</li>
+    <li>linkedin: saikrishna53</li>
+     <li>Instagram:vaxy boy</li>
+  </main></div>
 
   <footer>
     <p>&copy; Saikrishna 2023</p>
@@ -96,13 +159,12 @@ footer { background-color: #333; color: #fff; text-align: center; padding: 10px;
       </form>
     </div>
   </div>
-</div><br>
-<br><br>
+</div>
 
 
   <p>THANK YOU
 SEE U AGAIN SOON!</p>
-<br><br><br><br>
+<br><br><br>
 
 </body>
 </html>
